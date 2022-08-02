@@ -18,7 +18,7 @@ model = KMeans(n_clusters=2,random_state=0)
 model.fit(x_train)
 predictions = model.predict(x_test)
 labels = model.labels_
-print(pd.crosstab(y_train,labels))
+print(pd.crosstab(y_train,labels)) #cross tabulation of the data
 
 print('labels',labels)
 print('predictions',predictions)
